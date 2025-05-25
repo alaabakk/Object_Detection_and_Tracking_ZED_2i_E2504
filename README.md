@@ -21,7 +21,7 @@ This repository contains the code, models, and resources for the E2504 Bachelor 
   Main Python scripts for detection, tracking, and camera/gimbal integration.
   - `Yolo.py`: Basic YOLOv8 inference.
   - `Yolo_DeepSort.py`: YOLOv8 with DeepSort tracking.
-  - `Yolo_DeepSort_CameraGimbal.py`: Full pipeline with camera and gimbal control.
+  - `Yolo_CameraGimbal.py`: Full pipeline with camera and gimbal control.
   - `DetectorDeepSort.py`, `TrackerDeepSort.py`: Detection and tracking modules.
   - `custom_botsort.yaml`: Custom configuration for tracking.
 

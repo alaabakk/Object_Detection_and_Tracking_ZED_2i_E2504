@@ -12,7 +12,7 @@ selected_object = 'q'
 
 
 ## Serial configuration
-PORT = 'COM4'#/dev/ttyUSB0'  # <-- Use known USB port
+PORT = '/dev/ttyUSB0'#'COM4  # <-- Use known USB port
 BAUDRATE = 115200
 TIMEOUT = 1
 

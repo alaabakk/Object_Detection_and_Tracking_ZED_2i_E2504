@@ -26,7 +26,8 @@ RUN python3 -m pip install \
         ultralytics \
         pyserial \
         deep-sort-realtime \
-        openpyxl
+        openpyxl \
+        lap==0.5.12
     
 WORKDIR /usr/local/zed
 

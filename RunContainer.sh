@@ -26,12 +26,8 @@ docker run --gpus all -it --privileged \
     -e DISPLAY=$DISPLAY \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v /usr/local/zed/resources:/usr/local/zed/resources \
-<<<<<<< HEAD
     -v /usr/local/zed/settings:/usr/local/zed/settings \
     guulkittil/jp-zed:36.4.3_4.2
-=======
-    guulkittil/l4t-zed:36.4.3_4.2
->>>>>>> 258bc973f594da4933919e77aa5919238e5787e1
 
 # -----------------------------------------------------------------------------
 # Tips for container lifecycle management:

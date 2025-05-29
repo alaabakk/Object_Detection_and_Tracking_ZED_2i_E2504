@@ -12,7 +12,7 @@ selected_object = 'q'
 
 
 ## Serial configuration
-PORT = '/dev/ttyUSB0'  # <-- Use known USB port
+PORT = 'COM4'#/dev/ttyUSB0'  # <-- Use known USB port
 BAUDRATE = 115200
 TIMEOUT = 1
 
@@ -42,7 +42,7 @@ def init_yolo():
     print("Initializing YOLO model...")
     script_dir = os.path.dirname(os.path.abspath(__file__))
     # Construct the path to the model file
-    model_path = os.path.join(script_dir, "../Models/customYolov8n.engine")
+    model_path = os.path.join(script_dir, "../Models/customYolov8n.pt")
     model = YOLO(model_path, task="detect")
     print("YOLO model initialized")
     return model
@@ -133,7 +133,7 @@ def my_callback(inp, ser):
 
 def calculateDistance(middle, depth_map):
     # Get the depth value at the center of the object
-    if middle[0] <= 0 and middle[0] >= 1280 and middle[1] <= 0 and middle[1] >= 720:
+    if middle[0] >= 0 and middle[0] <= 1280 and middle[1] >= 0 and middle[1] <= 720:
         depth_value = depth_map.get_value(middle[0], middle[1])
         distance = depth_value[1]
     else:

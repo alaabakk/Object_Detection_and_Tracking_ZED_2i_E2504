@@ -30,6 +30,6 @@ RUN python3 -m pip install \
     
 WORKDIR /usr/local/zed
 
-RUN git clone https://github.com/alaabakk/E2504_bachelor
+RUN git clone https://github.com/alaabakk/Object_Detection_and_Tracking_ZED_2i_E2504.git
 
-WORKDIR /usr/local/zed/E2504_bachelor
+WORKDIR /usr/local/zed/Object_Detection_and_Tracking_ZED_2i_E2504

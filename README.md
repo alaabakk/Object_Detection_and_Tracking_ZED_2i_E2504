@@ -21,7 +21,7 @@ This repository contains the code, models, and resources for the E2504 Bachelor 
   Main Python scripts for detection, tracking, and camera/gimbal integration.
   - `Yolo.py`: Basic YOLOv8 inference.
   - `Yolo_DeepSort.py`: YOLOv8 with DeepSort tracking.
-  - `Yolo_DeepSort_CameraGimbal.py`: Full pipeline with camera and gimbal control.
+  - `Yolo_CameraGimbal.py`: Full pipeline with camera and gimbal control.
   - `DetectorDeepSort.py`, `TrackerDeepSort.py`: Detection and tracking modules.
   - `custom_botsort.yaml`: Custom configuration for tracking.
 
@@ -31,7 +31,7 @@ This repository contains the code, models, and resources for the E2504 Bachelor 
 
 - NVIDIA Jetson device (e.g., Orin Nano, Xavier, TX2, etc.) with JetPack 6.2 (L4T 36.4.3) or compatible
 - ZED 2i Stereo Camera + USB 3.0 (or higher) cable for camera connection
-- Docker installed for containerized setup
+- Docker installed on Jetson device for containerized setup
 - 3D printer for two-axis components (optional, for hardware assembly)
 
 ### Installation
@@ -40,8 +40,8 @@ This repository contains the code, models, and resources for the E2504 Bachelor 
 
 2. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/E2504_bachelor.git
-    cd E2504_bachelor
+    git clone https://github.com/alaabakk/Object_Detection_and_Tracking_ZED_2i_E2504.git
+    cd Object_Detection_and_Tracking_ZED_2i_E2504
     ```
 
 3. Build and run with Docker for NVIDIA Jetson platforms:
